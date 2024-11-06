@@ -19,7 +19,7 @@ def input_matrix():
     for i in range(2):
         row = []
         for j in range(2):
-            element = int(input(f"Enter element at posiƟon ({i},{j}): "))
+            element = int(input(f"Enter element at position ({i},{j}): "))
             row.append(element)
         matrix.append(row)
     return matrix
