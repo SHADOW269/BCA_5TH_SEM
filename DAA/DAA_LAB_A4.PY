@@ -35,3 +35,23 @@ print("the sorted array is: ")
 printArray(arr)
 time_takem=end_time-start_time
 print("the time taken to sort the array is: ",time_takem, "seconds")
+
+
+'''
+OUTPUT:
+
+The array before sorting is:
+43234 12830 8099 5423 67456 30295 20123 4321 90120 12345
+The sorted array is:
+4321 5423 8099 12345 12830 20123 30295 43234 67456 90120
+The time taken to sort the array is:  1.9550323486328125e-05 seconds
+
+Process:
+Generated array (example): [43234, 12830, 8099, 5423, 67456, 30295, 20123, 4321, 90120, 12345]
+Partitioning and Recursive Sorting:
+Partition the array around the pivot.
+Sort the left and right subarrays recursively.
+Continue until the entire array is sorted.
+Sorted Array: [4321, 5423, 8099, 12345, 12830, 20123, 30295, 43234, 67456, 90120]
+
+'''

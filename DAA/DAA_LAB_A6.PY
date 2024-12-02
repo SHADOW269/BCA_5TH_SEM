@@ -33,3 +33,37 @@ if __name__ == "__main__":
         g.add_edge(a, b)
     start = int(input("Enter the starting node for BFS: "))
     g.bfs(start)
+
+
+'''
+OUTPUT:
+
+Enter number of nodes: 5
+Enter number of edges: 6
+Enter the edges: 
+1 2
+1 3
+2 4
+2 5
+3 5
+4 5
+Enter the starting node for BFS: 1
+1 2 3 4 5
+
+Execution Steps:
+
+Graph representation after adding edges:
+1: [2, 3]
+2: [4, 5]
+3: [5]
+4: [5]
+5: []
+
+BFS starting from node 1:
+Start with queue = [1], visited = [1].
+Process 1: Print 1, add neighbors 2, 3 to queue and visited.
+Process 2: Print 2, add neighbors 4, 5.
+Process 3: Print 3 (skip 5 since it's already visited).
+Process 4: Print 4.
+Process 5: Print 5.
+'''

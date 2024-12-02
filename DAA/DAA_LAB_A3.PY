@@ -52,3 +52,26 @@ end_time = time.time()
 print("The sorted array is:")
 print(arr)
 print("The time taken to sort the array is:", end_time - start_time, "seconds")
+
+
+'''
+OUTPUT:
+
+Enter the value of n: 10
+The array before sorting is:
+[2528, 6031, 6957, 3498, 5336, 5157, 9144, 2573, 1372, 5566]
+The sorted array is:
+[1372, 2528, 2573, 3498, 5157, 5336, 5566, 6031, 6957, 9144]
+The time taken to sort the array is: 2.1696090698242188e-05 seconds
+
+Process:
+Generated array (example): [5482, 3592, 6782, 1005, 9703, 1509, 4573, 8790, 1473, 4621]
+Recursive Splits:
+Divide into halves until each subarray contains 1 element.
+Merge Steps:
+Merge [1005] and [3592] → [1005, 3592]
+Merge [5482] and [6782] → [5482, 6782]
+Continue merging and sorting in ascending order.
+Sorted Array: [1005, 1473, 1509, 3592, 4573, 4621, 5482, 6782, 8790, 9703]
+
+'''

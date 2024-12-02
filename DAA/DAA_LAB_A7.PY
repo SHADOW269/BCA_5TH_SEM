@@ -27,3 +27,37 @@ if __name__ == "__main__":
     start = int(input("Enter the starting node for DFS: "))
     visited = set()
     g.dfs(start, visited)
+
+
+'''
+OUTPUT:
+Enter number of nodes: 5
+Enter number of edges: 6
+Enter the edges: 
+1 2
+1 3
+2 4
+2 5
+3 5
+4 5
+Enter the starting node for DFS: 1
+1 2 4 5 3
+
+Execution Steps:
+
+Graph Representation:
+1: [2, 3]
+2: [4, 5]
+3: [5]
+4: [5]
+5: []
+
+DFS Starting from Node 1:
+Start with visited = {}.
+Visit 1: Print 1, add to visited.
+Visit 2: Print 2, add to visited.
+Visit 4: Print 4, add to visited.
+Visit 5: Print 5, add to visited.
+Backtrack to 3: Print 3, add to visited.
+
+'''
